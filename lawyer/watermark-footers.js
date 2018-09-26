@@ -3,7 +3,8 @@ function WatermarkFootersPrint() {
     var d = new Date();
     var timestamp = util.printd("yyyy-mm-dd HH:MM:ss", d);
     this.addWatermarkFromText({
-        cText: timestamp, 
+        cText: timestamp,
+        cFont: "Helvetica",
         nTextAlign: app.constants.align.right,
         nHorizAlign: app.constants.align.right,
         nVertAlign: app.constants.align.bottom,
@@ -18,7 +19,8 @@ function WatermarkFootersPrint() {
     });
     if (clientMatter !== null) {
         this.addWatermarkFromText({
-            cText: clientMatter.trim(), 
+            cText: clientMatter.trim(),
+            cFont: "Helvetica",
             nTextAlign: app.constants.align.left,
             nHorizAlign: app.constants.align.left,
             nVertAlign: app.constants.align.bottom,
